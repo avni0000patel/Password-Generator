@@ -18,3 +18,10 @@ var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 // TODO: Need to put " and \ in var special array
 var special = [" ", "!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\","]", "^", "_", "`", "{", "|", "}", "~"];
+
+var passwordLength;
+
+function generatePassword() {
+  passwordLength = prompt("Choose a length of at least 8 characters and no more than 128 characters");
+  console.log("Password length: " + passwordLength);
+};

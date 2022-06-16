@@ -24,6 +24,7 @@ var confirmUppercase;
 var confirmNumeric;
 var confirmSpecial;
 var passwordCharacters;
+var securePassword;
 
 function generatePassword() {
   passwordLength = prompt("Choose a length of at least 8 characters and no more than 128 characters.");
@@ -60,73 +61,74 @@ function generatePassword() {
     else if (confirmLowercase === true && confirmUppercase === true && confirmNumeric === true && confirmSpecial === false) {
       passwordCharacters = lowercase.concat(uppercase, numeric);
       console.log(passwordCharacters);
-    }
+  }
     // If lowercase, uppercase, and special criterias are selected. Numeric criteria is not selected. 
     else if (confirmLowercase === true && confirmUppercase === true && confirmNumeric === false && confirmSpecial === true) {
       passwordCharacters = lowercase.concat(uppercase, special);
       console.log(passwordCharacters);
-    }
+  }
     // If lowercase, numeric, and special criterias are selected. Uppercase criteria is not selected.
     else if (confirmLowercase === true && confirmUppercase === false && confirmNumeric === true && confirmSpecial === true) {
       passwordCharacters = lowercase.concat(uppercase, special);
       console.log(passwordCharacters);
-    }
+  }
     // If uppercase, numeric, and special criterias are selected. Lowercase criteria is not selected.
     else if (confirmLowercase === false && confirmUppercase === true && confirmNumeric === true && confirmSpecial === true) {
       passwordCharacters = uppercase.concat(numeric, special);
       console.log(passwordCharacters);
-    }
+  }
 
     // If 2 criterias are selected.
     // If lowercase and uppercase criterias are selected. Numeric and special criterias are not selected.
     else if (confirmLowercase === true && confirmUppercase === true && confirmNumeric === false && confirmSpecial === false) {
       passwordCharacters = lowercase.concat(uppercase);
       console.log(passwordCharacters);
-    }
+  }
     // If lowercase and numeric criterias are selected. Uppercase and special criterias are not selected.
     else if (confirmLowercase === true && confirmUppercase === false && confirmNumeric === true && confirmSpecial === false) {
       passwordCharacters = lowercase.concat(numeric);
       console.log(passwordCharacters);
-    }
+  }
     // If lowercase and special criterias are selected. Uppercase and numeric criterias are not selected.
     else if (confirmLowercase === true && confirmUppercase === false && confirmNumeric === false && confirmSpecial === true) {
       passwordCharacters = lowercase.concat(special);
       console.log(passwordCharacters);
-    }
+  }
     // If uppercase and numeric criterias are selected. Lowercase and special criterias are not selected.
     else if (confirmLowercase === false && confirmUppercase === true && confirmNumeric === true && confirmSpecial === false) {
       passwordCharacters = uppercase.concat(numeric);
       console.log(passwordCharacters);
-    }
+  }
     // If uppercase and special criterias are selected. Lowercase and numeric criterias are not selected.
     else if (confirmLowercase === false && confirmUppercase === true && confirmNumeric === false && confirmSpecial === true) {
       passwordCharacters = uppercase.concat(special);
       console.log(passwordCharacters);
-    }
+  }
     // If numeric and special criterias are selected. Lowercase and uppercase criterias are not selected. 
     else if (confirmLowercase === false && confirmUppercase === false && confirmNumeric === true && confirmSpecial === true) {
       passwordCharacters = numeric.concat(special);
       console.log(passwordCharacters);
-    }
+  }
     // If only 1 criterias is selected.
     // Lowercase criteria is selected. Uppercase, numeric, and special criterias are not selected.
     else if (confirmLowercase === true && confirmUppercase === false && confirmNumeric === false && confirmSpecial === false) {
       passwordCharacters = lowercase;
       console.log(passwordCharacters);
-    }
+  }
     // Uppercase criteria is selected. Lowercase, numeric, and special criterias are not selected.
     else if (confirmLowercase === false && confirmUppercase === true && confirmNumeric === false && confirmSpecial === false) {
       passwordCharacters = uppercase;
       console.log(passwordCharacters);
-    }
+  }
     // Numeric criteria is selected. Lowercase, uppercase, and special criterias are not selected.
     else if (confirmLowercase === false && confirmUppercase === false && confirmNumeric === true && confirmSpecial === false) {
       passwordCharacters = numeric;
       console.log(passwordCharacters);
-    }
+  }
     // Special criteria is selected. Lowercase, uppercase, and numeric criterias are not selected.
     else if (confirmLowercase === false && confirmUppercase === false && confirmNumeric === false && confirmSpecial === true) {
       passwordCharacters = special;
       console.log(passwordCharacters);
-    }
+  }
+
 }

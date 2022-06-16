@@ -30,12 +30,12 @@ function generatePassword() {
   passwordLength = prompt("Choose a length of at least 8 characters and no more than 128 characters.");
   console.log("Password length: " + passwordLength);
 
-  if(!passwordLength) {
+    if(!passwordLength) {
     alert("Value is required.");
   }
     // Can use while statement to repeat prompt
-    else if (passwordLength < 8 || passwordLength > 128) {
-    passwordLength = prompt("Your password did not meet the requirements. Try again. Choose a length of at least 8 characters and no more than 128 characters.");
+    if(passwordLength < 8 || passwordLength > 128) {
+    alert("Your password did not meet the requirements. Try again. Choose a length of at least 8 characters and no more than 128 characters.");
     console.log("Password length: " + passwordLength);
   }
     else {
@@ -48,6 +48,6 @@ function generatePassword() {
     confirmSpecial = confirm("Click OK if you would like to use special haracters.");
     console.log("Speical: " + confirmSpecial);
     confirmUppercase === false && confirmLowercase === false && confirmNumeric === false && confirmSpecial === false;
-    alert("At least one character type should be selected.")
+    alert("At least one character type should be selected.");
   }
 }

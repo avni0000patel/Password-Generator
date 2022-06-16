@@ -25,8 +25,9 @@ function generatePassword() {
   passwordLength = prompt("Choose a length of at least 8 characters and no more than 128 characters.");
   console.log("Password length: " + passwordLength);
 
-  if (passwordLength < 8 || passwordLength > 128) {
-    passwordLength = prompt("Your password did not meet the requirements. Choose a length of at least 8 characters and no more than 128 characters.");
+  // TODO: Make prompt repeat if passwordLength is not met
+  while (passwordLength < 8 || passwordLength > 128) {
+    passwordLength = prompt("Your password did not meet the requirements. Try again. Choose a length of at least 8 characters and no more than 128 characters.");
     console.log("Password length: " + passwordLength);
   }
 }

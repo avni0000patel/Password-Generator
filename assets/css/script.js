@@ -1,15 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
@@ -33,7 +24,7 @@ function generatePassword() {
     if(!passwordLength) {
     alert("Value is required.");
   }
-    if(passwordLength < 8 || passwordLength > 128) {
+    else if(passwordLength < 8 || passwordLength > 128) {
     alert("Your password did not meet the requirements. Try again. Choose a length of at least 8 characters and no more than 128 characters.");
     console.log("Password length: " + passwordLength);
   }
@@ -46,7 +37,8 @@ function generatePassword() {
     console.log("Numeric: " + confirmNumeric);
     confirmSpecial = confirm("Click OK if you would like to use special haracters.");
     console.log("Speical: " + confirmSpecial);
-  }
+  };
+
     // If no criteria is selected.
     if (confirmLowercase === false && confirmUppercase === false && confirmNumeric === false && confirmSpecial === false) {
     passwordCharacters = alert("At least one character type should be selected.");
@@ -129,6 +121,22 @@ function generatePassword() {
     else if (confirmLowercase === false && confirmUppercase === false && confirmNumeric === false && confirmSpecial === true) {
       passwordCharacters = special;
       console.log(passwordCharacters);
+  };
+
+    // Loop to generate a secure password.
+    for (var i=0; i < passwordLength; i++) {
+      securePassword = passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
+      console.log("Your secure password is: " + securePassword);
   }
+
+}
+
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
 
 }

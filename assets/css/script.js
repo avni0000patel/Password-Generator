@@ -31,7 +31,7 @@ function generatePassword() {
   console.log("Password length: " + passwordLength);
 
   if(!passwordLength) {
-    alert("Value required");
+    alert("Value is required.");
   }
     // Can use while statement to repeat prompt
     else if (passwordLength < 8 || passwordLength > 128) {

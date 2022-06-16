@@ -17,8 +17,8 @@ generateBtn.addEventListener("click", writePassword);
 var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var numeric = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-// TODO: Need to put " and \ in var special array
-var special = [" ", "!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
+// Use escape characters for single quote, double quote, and backlash.
+var special = [" ","\"", "!", "#", "$", "%", "&", "\'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
 var passwordLength;
 var confirmLowercase;
 var confirmUppercase;
@@ -138,7 +138,7 @@ function generatePassword() {
     password += passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
   }
   // Return password 
-  console.log("Your secure password is: " + password);
+  console.log("Your password is: " + password);
   return password;
 
 }

@@ -18,7 +18,7 @@ var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var numeric = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 // Use escape characters for single quote, double quote, and backlash.
-var special = [" ","\"", "!", "#", "$", "%", "&", "\'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
+var special = [" ", "\"", "!", "#", "$", "%", "&", "\'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
 var passwordLength;
 var confirmLowercase;
 var confirmUppercase;
@@ -137,11 +137,12 @@ function generatePassword() {
   // Loop to generate a secure password.
   for (var i = 0; i < passwordLength; i++) {
     securePassword = passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
+    console.log(securePassword);
     password.push(securePassword);
   }
 
   // Return password 
   console.log("Your password is: " + password);
   return password.join("");
-  
+
 }

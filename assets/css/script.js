@@ -46,7 +46,7 @@ function generatePassword() {
     console.log("Numeric: " + confirmNumeric);
     confirmSpecial = confirm("Click OK if you would like to use special haracters.");
     console.log("Speical: " + confirmSpecial);
-  };
+  }
 
   // If no criteria is selected.
   if (confirmLowercase === false && confirmUppercase === false && confirmNumeric === false && confirmSpecial === false) {
@@ -130,7 +130,7 @@ function generatePassword() {
   else if (confirmLowercase === false && confirmUppercase === false && confirmNumeric === false && confirmSpecial === true) {
     passwordCharacters = special;
     console.log(passwordCharacters);
-  };
+  }
 
   var password = [];
 

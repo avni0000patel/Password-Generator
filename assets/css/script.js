@@ -52,11 +52,13 @@ function generatePassword() {
   if (confirmLowercase === false && confirmUppercase === false && confirmNumeric === false && confirmSpecial === false) {
     passwordCharacters = alert("At least one character type should be selected.");
   }
+
   // If all 4 criterias are selected.
   else if (confirmLowercase === true && confirmUppercase === true && confirmNumeric === true && confirmSpecial === true) {
     passwordCharacters = lowercase.concat(uppercase, numeric, special);
     console.log(passwordCharacters);
   }
+
   // If 3 criterias are selected.
   // If lowercase, uppercase, and numeric criterias are selected. Special criteria is not selected. 
   else if (confirmLowercase === true && confirmUppercase === true && confirmNumeric === true && confirmSpecial === false) {
@@ -110,6 +112,7 @@ function generatePassword() {
     passwordCharacters = numeric.concat(special);
     console.log(passwordCharacters);
   }
+
   // If only 1 criterias is selected.
   // Lowercase criteria is selected. Uppercase, numeric, and special criterias are not selected.
   else if (confirmLowercase === true && confirmUppercase === false && confirmNumeric === false && confirmSpecial === false) {

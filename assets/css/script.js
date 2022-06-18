@@ -26,7 +26,6 @@ var confirmNumeric;
 var confirmSpecial;
 var passwordCharacters;
 var securePassword;
-var password = "";
 
 // Function
 function generatePassword() {
@@ -133,12 +132,16 @@ function generatePassword() {
     console.log(passwordCharacters);
   };
 
+  var password = [];
+
   // Loop to generate a secure password.
   for (var i = 0; i < passwordLength; i++) {
-    password += passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
+    securePassword = passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
+    password.push(securePassword);
   }
+
   // Return password 
   console.log("Your password is: " + password);
-  return password;
-
+  return password.join("");
+  
 }

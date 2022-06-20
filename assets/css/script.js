@@ -36,6 +36,7 @@ function generatePassword() {
     alert("Password lenght is required.");
   } else if (passwordLength < 8 || passwordLength > 128) {
     alert("Your password did not meet the requirements. Try again. Choose a length of at least 8 characters and no more than 128 characters.");
+    return false;
     console.log("Password length: " + passwordLength);
   } else {
     confirmLowercase = confirm("Click OK if you would like to use lowercase characters.");

@@ -52,6 +52,7 @@ function generatePassword() {
   // If no criteria is selected.
   if (confirmLowercase === false && confirmUppercase === false && confirmNumeric === false && confirmSpecial === false) {
     passwordCharacters = alert("At least one character type should be selected.");
+    return "Not valid";
   }
 
   // If all 4 criterias are selected.

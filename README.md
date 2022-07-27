@@ -3,6 +3,6 @@ In this project I have created a password generator. Randomly generating a passw
 ## GitHub Link
 https://github.com/avni0000patel
 ## GitHub Pages Link
-https://avni0000patel.github.io/git-challenge03/
+https://avni0000patel.github.io/Password-Generator/
 ## Screenshot
 ![passwordgeneratorscreenshot html](https://user-images.githubusercontent.com/104175474/174128056-80080585-0e1b-40b9-aa36-e478f0d4616e.png)

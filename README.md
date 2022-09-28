@@ -1,5 +1,5 @@
 # Password Generator
-In this project I have created a password generator. Randomly generating a password is important because a strong password provides greater security. This is an important consideration for an employee who has access to sensitive data. 
+In this project I have created a password generator to improve security and protect secure data. Randomly generating a password is important because a strong password provides greater security. This is an important consideration for an employee who has access to sensitive data. 
 ## GitHub Link
 https://github.com/avni0000patel
 ## GitHub Pages Link

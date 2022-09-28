@@ -4,5 +4,9 @@ In this project I have created a password generator to improve security and prot
 https://github.com/avni0000patel
 ## GitHub Pages Link
 https://avni0000patel.github.io/Password-Generator/
+## Technologies Used
+HTML - creates the structure of Web pages
+
+CSS - creates the presentation of Web pages
 ## Screenshot
 ![passwordgeneratorscreenshot html](https://user-images.githubusercontent.com/104175474/174128056-80080585-0e1b-40b9-aa36-e478f0d4616e.png)

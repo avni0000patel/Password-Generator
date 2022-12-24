@@ -45,6 +45,10 @@ header {
   padding: 30px 40px;
 }
 
+.card-header {
+  text-align: center;
+}
+
 .card-header::after {
   content: " ";
   display: block;
@@ -88,6 +92,12 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  filter: grayscale(15%) opacity(75%) hue-rotate(10deg) drop-shadow(0 0 0 transparent);
+  transition: all 250ms ease-out;
+}
+
+.btn:hover {
+  filter: grayscale(0%) opacity(100%) hue-rotate(0deg) drop-shadow(0 0 0 transparent);
 }
 
 button[disabled] {

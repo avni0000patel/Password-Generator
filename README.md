@@ -5,11 +5,11 @@ https://github.com/avni0000patel
 ## GitHub Pages Link
 https://avni0000patel.github.io/Password-Generator/
 ## Technologies Used
-HTML - creates the structure of Web pages
+HTML
 
-CSS - creates the presentation of Web pages
+CSS
 
-Javascript - creates a dynamic and interactive experience for the user
+Javascript
 ## Screenshot
 ![password-generator](https://user-images.githubusercontent.com/104175474/209451261-a120de0d-4f0b-4138-8e80-c786d6d9c1d3.png)
 

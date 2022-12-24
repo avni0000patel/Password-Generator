@@ -11,4 +11,5 @@ CSS - creates the presentation of Web pages
 
 Javascript - creates a dynamic and interactive experience for the user
 ## Screenshot
+![password-generator](https://user-images.githubusercontent.com/104175474/209451261-a120de0d-4f0b-4138-8e80-c786d6d9c1d3.png)
 
